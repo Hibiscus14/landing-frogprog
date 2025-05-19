@@ -11,15 +11,20 @@
 }
 
 @font-face {
-    font-family: 'Mazzard M';
-    src: url('../fonts/MazzardSoftM-Light.woff2') format('WOFF2'), url('../fonts/MazzardSoftM-Light.woff') format('WOFF'), url('../fonts/MazzardSoftM-Light.eot') format('EOT'), url('../fonts/MazzardSoftM-Light.svg') format('SVG');
+    font-family: 'MazzardM-Light';
+    src: url('../fonts/mazzardm-light.eot'); 
+    src: url('../fonts/mazzardm-light.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/mazzardm-light.woff2') format('woff2'), 
+    url('../fonts/mazzardm-light.woff') format('woff'), 
+    url('../fonts/mazzardm-light.ttf') format('truetype'),
+    url('../fonts/mazzardm-light.svg#mazzardm-light') format('svg');
     font-weight: 400;
     font-style: normal;
 }
 
 :root {
     --font-heading: 'Benzin-Bold', sans-serif;
-    --font-body: 'Mazzard M', sans-serif;
+    --font-body: 'MazzardM-Light', sans-serif;
     --clr-black: #000000;
     --clr-yellow: #F6E125;
     --clr-green: #149939;
@@ -28,11 +33,11 @@
     --clr-purple: #7544EF;
     --clr-pink: #FFD3F1;
     --clr-blue: #7ED7F5;
-    --font-base-size: 16px; 
-    --content-width: 1396px; 
-    --section-spacing: 4rem; 
-    --border-radius-sm: 0.5rem; 
-    --border-radius-md: 1rem; 
+    --font-base-size: 16px;
+    --content-width: 1396px;
+    --section-spacing: 4rem;
+    --border-radius-sm: 0.5rem;
+    --border-radius-md: 1rem;
     --border-radius-lg: 1.5rem;
 }
 
