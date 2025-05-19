@@ -1,0 +1,114 @@
+@font-face {
+        font-family: 'Benzin-Bold';
+        src: url('../fonts/benzin-bold.eot'); 
+        src: url('../fonts/benzin-bold.eot?#iefix') format('embedded-opentype'), 
+        url('../fonts/benzin-bold.woff2') format('woff2'), 
+        url('../fonts/benzin-bold.woff') format('woff'), 
+        url('../fonts/benzin-bold.ttf') format('truetype'), 
+        url('../fonts/benzin-bold.svg#benzin-bold') format('svg'); 
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('../fonts/MazzardSoftM-Light.woff2') format('WOFF2'), url('../fonts/MazzardSoftM-Light.woff') format('WOFF'), url('../fonts/MazzardSoftM-Light.eot') format('EOT'), url('../fonts/MazzardSoftM-Light.svg') format('SVG');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --font-heading: 'Benzin-Bold', sans-serif;
+    --font-body: 'Mazzard M', sans-serif;
+    --clr-black: #000000;
+    --clr-yellow: #F6E125;
+    --clr-green: #149939;
+    --clr-white: #FFFFFF;
+    --clr-red: #F3606D;
+    --clr-purple: #7544EF;
+    --clr-pink: #FFD3F1;
+    --clr-blue: #7ED7F5;
+    --font-base-size: 16px; 
+    --content-width: 1396px; 
+    --section-spacing: 4rem; 
+    --border-radius-sm: 0.5rem; 
+    --border-radius-md: 1rem; 
+    --border-radius-lg: 1.5rem;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--clr-black);
+    background: var(--clr-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--clr-black);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.section-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section-subheading {
+    text-align: center;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-family: var(--font-heading);
+    margin-bottom: 2rem;
+}
+.container {
+    width: 100%;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+p {
+    margin-bottom: 1rem;
+}
+.text-center {
+    text-align: center;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.mb-4 {
+    margin-bottom: 4rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
