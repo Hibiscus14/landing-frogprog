@@ -41,6 +41,7 @@
     font-weight: 700;
     transition: transform 0.3s ease;
     text-align: center;
+    color: var(--clr-black);
     display: inline-block;
 }
 
