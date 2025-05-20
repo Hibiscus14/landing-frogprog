@@ -181,6 +181,10 @@
         margin-bottom: 1rem;
     }
 
+    .infographic::after {
+        display: none;
+    }
+
     .info-text {
         background-color: var(--clr-pink);
         width: fit-content;
@@ -344,6 +348,10 @@
         top: 90%;
         left: 65%;
         width: 35%;
+    }
+
+    .infographic::after {
+        display: block;
     }
 
     .left-vertical-line {
