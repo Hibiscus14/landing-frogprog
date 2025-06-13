@@ -704,14 +704,16 @@
         height: 1.5rem;
     }
 
-.footer-privacy {
+.footer-privacy, .footer-agreement {
     color: #fff;
     font-size: 1rem;
     text-decoration: underline;
     transition: opacity 0.3s ease;
+    display: block;
+    margin-top: 0.5rem;
 }
 
-    .footer-privacy:hover {
+    .footer-privacy:hover, .footer-agreement:hover {
         opacity: 0.8;
     }
 
@@ -730,3 +732,34 @@
         .footer-links a:hover {
             opacity: 0.8;
         }
+
+.footer-contacts {
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+    .footer-contacts p {
+        margin: 0.5rem 0;
+    }
+
+    .footer-contacts a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+        .footer-contacts a:hover {
+            text-decoration: underline;
+        }
+
+.footer-requisites {
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+    .footer-requisites p {
+        margin: 0.3rem 0;
+    }
