@@ -2,15 +2,20 @@
 
 @media (max-width: 376px) {
     .main__bg {
-        min-height: 22rem; 
+        min-height: 22rem;
     }
+
     .main__subtitle {
-        font-size: 1.2rem; 
+        font-size: 1.2rem;
     }
+
     .main__btn {
         margin-bottom: 1rem;
     }
+
+
 }
+
 
 @media (max-width: 767px ) {
     .hamburgerMenu {
@@ -193,44 +198,231 @@
     }
 
     .infographic {
+        position: relative;
+        width: 100%;
+        height: auto;
+        min-height: 25rem;
+        margin: 5rem 0;
+    }
+
+        .infographic::after {
+            content: '';
+            position: absolute;
+            top: 30%;
+            right: 0;
+            width: 5px;
+            height: calc(90% - 30%);
+            background-color: var(--clr-purple);
+            display: none;
+        }
+
+    .top-line, .bottom-line {
+        position: absolute;
+        background-color: var(--clr-purple);
+        height: 6px;
+        display: none;
+    }
+
+    .vertical-line {
+        position: absolute;
+        background-color: var(--clr-purple);
+        width: 5px;
+        height: 2rem;
+        display: none;
+    }
+
+    .point {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background-color: var(--clr-purple);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .infographic-icon {
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+        position: relative;
+        margin: 0 auto 1.5rem;
+    }
+
+    .info-text {
+        background-color: var(--clr-pink);
+        padding: 0.5rem;
+        border-radius: var(--border-radius-sm);
+        font-size: clamp(1rem, 1.5vw, 1.5rem);
+        line-height: 1.4;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .infographic {
         min-height: auto;
         margin: 2rem 0;
+        position: relative;
+        padding: 2rem 1rem;
+        overflow: visible;
     }
 
     .top-line, .bottom-line, .vertical-line, .point {
         display: none;
     }
 
+    .infographic::before {
+        content: '';
+        position: absolute;
+        left: 1rem;
+        top: 3rem; 
+        bottom: 3rem;
+        width: 5px;
+        background-color: var(--clr-purple);
+        z-index: 1;
+    }
+
     .info-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 2px solid var(--clr-pink);
-        background-color: rgba(255, 211, 241, 0.25);
-        padding: 1.5rem;
-        border-radius: var(--border-radius-sm);
-        margin-bottom: 1.5rem;
-    }
-
-    .infographic-icon {
-        max-width: 120px;
-        margin-bottom: 1rem;
-    }
-
-    .infographic::after {
-        display: none;
+        position: relative;
+        margin-bottom: 4rem;
+        min-height: 70px;
     }
 
     .info-text {
         background-color: var(--clr-pink);
-        width: fit-content;
-        padding: 0;
-        margin-bottom: 0;
-        text-align: center;
+        padding: 0.5rem 0.5rem;
+        border-radius: var(--border-radius-sm);
         font-size: 1.2rem;
-        padding: 0.3rem 0.75rem;
+        line-height: 1.4;
+        margin: 0;
+        position: relative;
+        z-index: 4;
+        display: inline-block;
+        width: auto;
+        max-width: calc(100% - 2rem);
     }
 
+    .infographic-icon {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        z-index: 5;
+    }
+
+    .info-container-ar {
+        margin-left: 3rem; 
+    }
+
+        .info-container-ar::before {
+            content: '';
+            position: absolute;
+            left: -3rem;
+            top: 20%;
+            transform: translateY(-50%);
+            width: 2.5rem;
+            height: 5px;
+            background-color: var(--clr-purple);
+            z-index: 2;
+        }
+
+        .info-container-ar::after {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 20%;
+            transform: translate(-50%, -50%);
+            width: 15px;
+            height: 15px;
+            background-color: var(--clr-purple);
+            border-radius: 50%;
+            z-index: 3;
+        }
+
+        .info-container-ar .info-text {
+            margin-left: 0;
+        }
+
+        .info-container-ar .infographic-icon {
+            top: -60px;
+            right: -10px;
+        }
+
+    .info-container-quest {
+        margin-left: 5rem;
+    }
+
+        .info-container-quest::before {
+            content: '';
+            position: absolute;
+            left: -5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4rem;
+            height: 4px;
+            background-color: var(--clr-purple);
+            z-index: 2;
+        }
+
+        .info-container-quest::after {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 15px;
+            height: 15px;
+            background-color: var(--clr-purple);
+            border-radius: 50%;
+            z-index: 3;
+        }
+
+        .info-container-quest .info-text {
+            margin-left: 0;
+        }
+
+        .info-container-quest .infographic-icon {
+            top: 50%;
+            right: -25%;
+            transform: translateY(-50%);
+        }
+
+    .info-container-result {
+        margin-left: 7rem; 
+    }
+
+        .info-container-result::before {
+            content: '';
+            position: absolute;
+            left: -7rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 6.5rem;
+            height: 4px;
+            background-color: var(--clr-purple);
+            z-index: 2;
+        }
+
+        .info-container-result::after {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 15px;
+            height: 15px;
+            background-color: var(--clr-purple);
+            border-radius: 50%;
+            z-index: 3;
+        }
+
+        .info-container-result .info-text {
+            margin-left: 0;
+        }
+
+        .info-container-result .infographic-icon {
+            bottom: -80%;
+            right: -10%;
+        }
+    
 
     .advantage-number {
         left: 0.3rem;
