@@ -448,7 +448,7 @@
     .trial-offer__illustration {
         position: relative;
         margin: clamp(-1rem, -1.5vw, -0.75rem) clamp(-2.5rem, -4vw, -3rem) clamp(-2rem, -3vw, -2.5rem) clamp(-2.5rem, -4vw, -3rem);
-        height: clamp(25rem, 50vh, 35rem);
+        height: clamp(25rem, 40vh, 35rem);
     }
 
     .footer__inner {
