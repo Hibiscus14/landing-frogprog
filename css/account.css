@@ -1,0 +1,173 @@
+.account-nav a {
+    position: relative;
+}
+
+.account-nav a.active {
+    color: var(--clr-purple);
+}
+
+.account-nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--clr-purple);
+}
+
+.account-main {
+    padding: 3rem 0;
+    min-height: calc(100vh - 108px - 300px); 
+}
+
+.account-section {
+    margin-bottom: 2rem;
+}
+
+.account-container {
+    background-color: var(--clr-white);
+    border: 2px solid var(--clr-purple);
+    border-radius: var(--border-radius-md);
+    padding: 2rem;
+}
+
+.user-info-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.user-avatar-container {
+    position: relative;
+}
+
+.user-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.user-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-upload-btn {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--clr-white);
+    border: 2px solid var(--clr-purple);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--clr-purple);
+    z-index: 2;
+}
+
+.user-info {
+    flex: 1;
+}
+
+.user-name {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.user-id {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.user-data-container {
+    position: relative;
+}
+
+.user-data-layout {
+    display: flex;
+    gap: 2rem;
+}
+
+.user-data-title {
+    flex: 0 0 400px;
+}
+
+.user-data-content {
+    flex: 1;
+}
+
+.user-data-container .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.user-data-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 2px solid var(--clr-yellow);
+    background: var(--clr-white);
+    border-radius: 10px;
+    outline: none;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.save-btn {
+    background: var(--clr-yellow);
+    color: var(--clr-black);
+    padding: 0.75rem 2rem;
+}
+
+@media (max-width: 767px) {
+    .user-data-layout {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .user-data-title {
+        flex: 0 0 auto;
+    }
+    
+    .user-data-container .section-title {
+        text-align: center;
+    }
+
+    .form-actions {
+        justify-content: center;
+    }
+    
+    .user-name {
+        font-size: 1rem;
+    }
+}

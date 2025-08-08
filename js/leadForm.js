@@ -22,7 +22,7 @@
         }
 
         try {
-            const response = await fetch("https://api-domain.com/api/Lead", {
+            const response = await fetch("https://91.206.15.217/api/Lead", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

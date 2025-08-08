@@ -11,6 +11,35 @@
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=103628455', 'ym');
+
+        ym(103628455, 'init', { ssr: true, webvisor: true, clickmap: true, ecommerce: "dataLayer", accurateTrackBounce: true, trackLinks: true });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/103628455" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Top.Mail.Ru counter -->
+    <script type="text/javascript">
+        var _tmr = window._tmr || (window._tmr = []);
+        _tmr.push({ id: "3677895", type: "pageView", start: (new Date()).getTime() });
+        (function (d, w, id) {
+            if (d.getElementById(id)) return;
+            var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+            ts.src = "https://top-fwz1.mail.ru/js/code.js";
+            var f = function () { var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s); };
+            if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+        })(document, window, "tmr-code");
+    </script>
+    <noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3677895;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
+    <!-- /Top.Mail.Ru counter -->
+
 </head>
 <body style="margin:0;padding:0">
     <header class="header">
@@ -28,8 +57,39 @@
                     <li><a href="#reviews">Отзывы</a></li>
                 </ul>
             </nav>
+            <div class="auth-container">
+                <button class="login-btn" id="loginBtn">Войти</button>
+                <div class="user-profile" id="userProfile" style="display: none;">
+                    <div class="user-icon">
+                        <img src="img/avatar.svg" alt="User avatar">
+                    </div>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="account.html">Личный кабинет</a></li>
+                            <li><a href="#">Прогресс</a></li>
+                            <li><a href="#">Подписка</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
+    
+    <div class="modal" id="loginModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <h2 class="modal-title">Вход</h2>
+            <form id="loginForm" class="login-form">
+                <input type="text" name="username" placeholder="Логин" required>
+                <input type="password" name="password" placeholder="Пароль" required>
+                <div style="text-align: center;">
+                    <button type="submit" class="btn login-form-btn">Войти</button>
+                </div>
+
+            </form>
+            <a href="#" class="register-link">или<br> зарегистрироваться</a>
+        </div>
+    </div>
     <section class="main">
         <div class="main__bg">
             <div class="container main__inner">
@@ -184,7 +244,8 @@
             </div>
         </div>
     </section>
-    <section id="media" class="media-section">
+
+    <section id="media" class="media-section" style="display: none;">
         <div class="container">
             <div class="media-video-wrapper">
                 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
@@ -194,6 +255,7 @@
             </div>
         </div>
     </section>
+
     <section id="reviews" class="reviews-section">
         <div class="carousel-wrapper">
             <div class="my-slider">
@@ -202,12 +264,10 @@
                         <div class="card-inner">
                             <div class="user-header">
                                 <div class="avatar"></div>
-                                <div class="user-name">Имя пользователя</div>
+                                <div class="user-name">Елена Васильева</div>
                             </div>
                             <div class="review-text">
-                                Раньше мой сын просто играл на планшете,
-                                а теперь он развивается! Он начал изучать
-                                основы программирования, ему очень понравилось и теперь он хочет стать программистом. Я вижу, как у него горят глаза от интереса.
+                                Мой 8-летний сын Даниил раньше проводил часы за обычными играми на планшете. С ФрогПрог всё изменилось! Теперь он не просто играет — он создаёт свои первые программы в дополненной реальности. Видя, как его глаза загораются от каждого урока, я понимаю — это именно то, что нужно современным детям. За два месяца он уже показывает мне свои "живые" алгоритмы!
                             </div>
                         </div>
                     </div>
@@ -218,12 +278,10 @@
                         <div class="card-inner">
                             <div class="user-header">
                                 <div class="avatar"></div>
-                                <div class="user-name">Имя пользователя</div>
+                                <div class="user-name">Максим Петров</div>
                             </div>
                             <div class="review-text">
-                                Раньше мой сын просто играл на планшете,
-                                а теперь он развивается! Он начал изучать
-                                основы программирования, ему очень понравилось и теперь он хочет стать программистом. Я вижу, как у него горят глаза от интереса.
+                                Как IT-специалист, я понимаю важность раннего обучения программированию. ФрогПрог превзошёл все мои ожидания! Моя дочь София за месяц освоила базовые концепции, которые я бы изучал годами. AR-технологии делают абстрактные понятия понятными и увлекательными. Теперь она мечтает стать разработчиком игр и серьёзно относится к учёбе.
                             </div>
                         </div>
                     </div>
@@ -234,12 +292,38 @@
                         <div class="card-inner">
                             <div class="user-header">
                                 <div class="avatar"></div>
-                                <div class="user-name">Имя пользователя</div>
+                                <div class="user-name">Анна Смирнова</div>
                             </div>
                             <div class="review-text">
-                                Раньше мой сын просто играл на планшете,
-                                а теперь он развивается! Он начал изучать
-                                основы программирования, ему очень понравилось и теперь он хочет стать программистом. Я вижу, как у него горят глаза от интереса.
+                                Долго искала курсы, которые заинтересуют моего непоседливого Артёма (7 лет). Традиционные методы обучения ему не подходили. ФрогПрог стал настоящим спасением! Квестовый формат и возможность сразу видеть результат своего кода мотивируют лучше любых оценок. Сын стал более усидчивым, логично мыслит и даже помогает мне "чинить" компьютер!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide-item">
+                    <div class="review-card">
+                        <div class="card-inner">
+                            <div class="user-header">
+                                <div class="avatar"></div>
+                                <div class="user-name">Дмитрий Кузнецов</div>
+                            </div>
+                            <div class="review-text">
+                                Записал двойняшек Алису и Егора (по 10 лет) на ФрогПрог после неудачного опыта с обычными курсами программирования. Разница колоссальная! Дети соревнуются, кто быстрее решит AR-головоломку, обсуждают алгоритмы за ужином. Учительница в школе отметила, что они стали лучше справляться с математическими задачами. Инвестиция в будущее!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide-item">
+                    <div class="review-card">
+                        <div class="card-inner">
+                            <div class="user-header">
+                                <div class="avatar"></div>
+                                <div class="user-name">Ирина Николаева</div>
+                            </div>
+                            <div class="review-text">
+                                Была скептически настроена — может ли 6-летняя Варя понять программирование? ФрогПрог развеял все сомнения! Игровая механика и милые персонажи сделали сложные темы доступными. Дочка с гордостью показывает бабушке, как "оживает" её код. Планирую продолжить обучение — это лучшая подготовка к цифровому будущему!
                             </div>
                         </div>
                     </div>
@@ -287,7 +371,7 @@
                     <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><img src="img/instagram.svg" alt="Instagram"></a>
                 </div>
                 <a href="#privacy" class="footer-privacy">Политика конфиденциальности</a>
-                <a href="#agreement" class="footer-agreement">Пользовательское соглашение</a>
+                <a href="privacy.html" class="footer-agreement">Пользовательское соглашение</a>
                 <div class="footer-contacts">
                     <p>Телефон: +7 (999) 999-99-99</p>
                     <p>Email: <a href="mailto:frogprogbussiness@yandex.com">frogprogbussiness@yandex.com</a></p>
@@ -320,6 +404,17 @@
     <script src="js/reviewsCarousel.js"></script>
     <script src="js/leadForm.js"></script>
     <script src="js/scrollToTrial.js"></script>
+    <script src="js/authHandler.js"></script>
+    </body>
+    </html>
 
-</body>
-</html>
+<!-- Добавляем модальное окно для входа -->
+<div class="modal" id="loginModal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <h2 class="modal-title">Вход</h2>
+        <form id="loginForm" class="login-form">
+            <input type="text" name="username" placeholder="Логин" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <button type="submit" class="btn login-form-btn">Войти</button>
+        </form>
