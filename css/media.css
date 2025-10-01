@@ -13,7 +13,22 @@
         margin-bottom: 1rem;
     }
 
+    .support-logo1 {
+        width: 100px;
+    }
 
+    .support-logo2 {
+        width: 150px;
+    }
+
+    .support-logos {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .support-text {
+        font-size: 0.7rem;
+    }
 }
 
 
@@ -487,6 +502,22 @@
     .footer-requisites {
         font-size: 0.75rem;
     }
+    .support-logo1 {
+        width: 135px;
+    }
+
+    .support-logo2 {
+        width: 200px;
+    }
+
+    .support-logos {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .support-text {
+        font-size: 0.75rem;
+    }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -687,6 +718,13 @@
     .trial-offer__illustration {
         height: 150%;
     }
+    .support-logo1 {
+        width: 200px;
+    }
+
+    .support-logo2 {
+        width: 300px;
+    }
 }
 
     /* Large devices (desktops, 992px and up) */
@@ -717,6 +755,13 @@
     .info-result {
         left: 10%;
     }
+    .support-logo1 {
+        width: 230px;
+    }
+
+    .support-logo2 {
+        width: 350px;
+    }
 }
 
     /* Extra large devices (large desktops, 1200px and up) */
@@ -744,7 +789,14 @@
 
     .trial-offer__form {
         padding: clamp(2rem, 4vw, 2.5rem);
-    }  
+    }
+    .support-logo1 {
+        width: 270px;
+    }
+
+    .support-logo2 {
+        width: 400px;
+    }
 }
 
 
