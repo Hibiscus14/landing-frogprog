@@ -617,11 +617,11 @@
 
 .trial-characters {
     position: absolute;
-    left: 30%;
+    left: 35%;
     bottom: 5%;
     transform: translateX(-50%);
     width: 100%;
-    max-width: 300px;
+    max-width: 500px;
     height: auto;
     z-index: 1;
 }
